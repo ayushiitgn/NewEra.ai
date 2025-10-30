@@ -1,0 +1,104 @@
+        body { background: url("bvdo.mp4") ;
+        font-family: Arial, sans-serif;
+        }
+        .text0 {
+        color: white;}
+        .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* put it behind everything */
+    }
+        .text1 {
+        background:rgba(128, 0, 128);
+        color: white;
+        border-color: PURPLE;
+        border-radius:50px;
+        font-family: Times New Roman;
+        overflow: hidden;
+        text-align: center;
+        padding: 5px;
+        white-space: nowrap;
+        width:14ch;
+        height:auto;
+        animation: typing 0.5s steps(14) 1s infinite alternate;
+        cursor:pointer;}
+
+        .text2{
+        background:grey;
+        width:5ch;
+        height:auto;
+        border-color: grey;
+        border-radius:50%;}
+        .text1, .text2, .blur-box3a {
+        display: inline-block;
+        vertical-align: middle;
+        }
+        .blur-box {
+          width: 75%;
+          height: 200px;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 15px;
+          border
+          backdrop-filter: blur(10px); /* the blur magic */
+          -webkit-backdrop-filter: blur(10px); /* Safari support */
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 1.5em;
+        }
+        .blur-box2 {
+          background: linear-gradient(
+          rgba(255,255,255,0.2),
+          rgba(255,255,255,0.1)
+          );border: 1px solid rgba(255, 255, 255, 0.3)
+          border-radius:50%
+          backdrop-filter: blur(15px);
+        }
+        .blur-box3 {
+        display: flex;              /* enables flexbox */
+          align-items: center;        /* vertical centering */
+          justify-content: center;    /* horizontal centering */
+          backdrop-filter: blur(8px); /* blurs the background behind */
+          background: rgba(255,255,255,0.2); /* semi-transparent glass */
+          width: 300px;
+          height: 200px;
+          border-radius: 10px;
+          color: white;
+        }
+        .blur-box4 {
+          width: 250px;
+          padding: 20px;
+          text-align: center;
+          border-radius: 12px;
+          background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+          backdrop-filter: blur(8px);
+          color: white;
+          font-size: 1.2em;
+        }
+
+
+         .blur-box3a {
+        display: flex;              /* enables flexbox */
+          align-items: center;        /* vertical centering */
+          justify-content: center;    /* horizontal centering */
+          backdrop-filter: blur(8px); /* blurs the background behind */
+          background: rgba(255,255,255,0.2); /* semi-transparent glass */
+          width: 30ch;
+          height: auto;
+          border-radius: 10px;
+          color: white;
+        }
+
+
+
+
+        @keyframes typing {
+            from{width:0;}
+            to{width: 14ch;}
+        }
